@@ -31,14 +31,7 @@ int main()
             }
         }
     }
-    double ans[size];
-    // for (int i = 2; i >= 0; i--)
-    // {
-    //     for (int j = 0; j < size; j++)
-    //     {
-    //         ans[i] += arry[i][j] * arry[i][size];
-    //     }
-    // }
+   
     double x3 = arry[2][3] / arry[2][2];
     double x2 = (arry[1][3] - arry[1][2] * x3) / arry[1][1];
     double x1 = (arry[0][3] - arry[0][1] * x2 - arry[0][2] * x3) / arry[0][0];
