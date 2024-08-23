@@ -7,7 +7,7 @@ int main()
                                    {3, 4, -5, 0},
                                    {1, -2, 1, -4}};
 
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < size; i++)
     {
         for (int check = i + 1; check < size; check++)
         {
@@ -21,6 +21,7 @@ int main()
 
                 arry[check][j] -= arry[i][j];
             }
+            // print
             for (int j = 0; j < size; j++)
             {
                 for (int k = 0; k < size + 1; k++)
@@ -31,7 +32,7 @@ int main()
             }
         }
     }
-   
+
     double x3 = arry[2][3] / arry[2][2];
     double x2 = (arry[1][3] - arry[1][2] * x3) / arry[1][1];
     double x1 = (arry[0][3] - arry[0][1] * x2 - arry[0][2] * x3) / arry[0][0];
